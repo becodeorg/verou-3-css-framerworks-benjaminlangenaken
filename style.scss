@@ -7,12 +7,13 @@ $primary-background-color: #ddd;
 
 body{
     background-color: $primary-background-color;
+    font-family: 'Nunito', sans-serif;
+    color: #1d3557;
     width: 100vw;
     height: 100vh;
     display: flex;
-
+    
     .container{
-        display: flex;
         align-items: center;
 
         .card{
@@ -24,6 +25,20 @@ body{
                 padding: 20px;
                 width: 150px;
                 height: 150px;
+            }
+
+            .btn{
+                background-color: #fff;
+                color: #14213d;
+                font-weight: bold;
+                border-color: #fff;;
+                border-radius: 25px;
+            }
+
+            .btn:hover{
+                background-color: #4ea8de;
+                color: #fff; 
+                border-color: #4ea8de;;
             }
         }
     }
