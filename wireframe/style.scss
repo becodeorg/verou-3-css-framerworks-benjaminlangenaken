@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e9ecef;
+    font-family: "Nunito", sans-serif;
+    width: 100vw;
+    height: 300vh;
+    display: grid;
+
+    .container-main{
+        background-color: #f8f9fa;
+        border: #ced4da;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        height: 280vh;
+        border-left: 1px solid #ced4da;
+        border-right: 1px solid #ced4da;
+
+        .container-top{
+            background-color: #6c757d;
+            padding-top: 1vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
+            height: 50vh;
+            display: grid;
+            grid-template-rows: [row1-start] 25% [row1-end] 75% [last-line] 25%;
+            grid-template-columns: [column1-start] 40% [column1-end] 35% [end] 25%;
+            flex-direction: row;
+
+            .container-logo{
+                background-color: #495057;
+                height: 50%;
+                width: 40%;
+                text-align: center;
+                grid-row-start: row1-start;
+                grid-column-start: column1-start;
+                color: #f8f9fa;
+                font-weight: bold;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .btn-group{
+                height: 50%;
+                width: 100%;
+                text-align: center;
+                grid-row-start: row1-start;
+                grid-column-start: end;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .btn{
+                    background-color: #6c757d;
+                    color: #f8f9fa;
+                    font-weight: bold;
+                    font-size: smaller;
+                    border-radius: 25px;
+                }
+
+                .btn:hover{
+                    background-color: #495057;
+                    border-radius: 25px;
+                }
+            }
+
+            h1{
+                height: 50%;
+                width: 100%;
+                grid-row-start: row1-end;
+                grid-column-start: column1-start;
+                color: #f8f9fa;
+                font-size: 2rem;
+            }
+        }
+
+        .container-2{
+            background-color: #f8f9fa;
+            padding-top: 1vw;
+            padding-left: 4vw;
+            height: 10vh;
+            border-bottom: 1px solid #ced4da;
+        }
+    }
+    
+    .container-footer{
+        background-color: #6c757d;
+        width: 100vw;
+        height: 20vh;
+        text-align: center;
+        display: grid;
+        align-items: center;
+        color: #f8f9fa;     
+    }
+}
