@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+@media screen and (max-width: 1023px){
+
 body{
     background-color: #e9ecef;
     font-family: "Nunito", sans-serif;
@@ -12,7 +14,191 @@ body{
     header{
         background-color: #adb5bd;
         width: auto;
-        height: 500px;
+        height: 40vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        display: grid;
+        grid-template-rows: [row1] 2vw [row2] 8vw [row3] auto;
+        grid-template-columns: [col1] 3vw [col2] 50vw [col3] auto;
+
+        .container-logo{
+            background-color: #495057;
+            color: #f8f9fa;
+            height: 5vh;
+            width: 15vw;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-align: center;
+            grid-row: row2;
+            grid-column: col2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-group{
+            height: 5vh;
+            width: 45vw;
+            text-align: center;
+            grid-row: row2;
+            grid-column: column3;
+            display: flex;
+
+            .support{
+                background-color: #adb5bd;
+                border: solid #adb5bd;
+                color: #f8f9fa;
+                height: 5vh;
+                width: 10vw;
+                margin: 0px 1vw;
+                font-size: 1rem;
+                font-weight: bold;
+                border-radius: 25px;
+            }
+
+            .support:hover{
+                background-color: #6c757d;
+                border: solid #6c757d;
+                outline: 0;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+
+            .login{
+                background-color: #495057;
+                border: solid #495057;
+                color: #f8f9fa;
+                height: 5vh;
+                width: 10vw;
+                margin: 0px 1vw;
+                font-size: 1rem;
+                font-weight: bold;
+                border-radius: 25px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+
+            .login:hover{
+                background-color: #0077b6;
+                border: solid #0077b6;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+
+        h1{
+            color: #f8f9fa;
+            height: 5vh;
+            width: 30vw;
+            font-size: 2rem;
+            grid-row-start: row3;
+            grid-column-start: col2;
+        }
+    }
+
+    main{
+        background-color: #f8f9fa;
+        border-left: 1px solid #ced4da;
+        border-right: 1px solid #ced4da;
+        width: 80vw;
+        height: 300vh;
+        margin-left: 10vw;
+        margin-right: 10vw;   
+
+        .container-2{
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ced4da;
+            height: 12vh;
+            display: flex;
+            align-items: center;
+
+            .container-logo{
+                background-color: #495057;
+                color: #f8f9fa;
+                height: 5vh;
+                width: 15vw;
+                font-size: 0.8rem;
+                margin-left: 3vw;
+                font-weight: bold;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .btn-group{
+                height: 5vh;
+                width: 55vw;
+                text-align: center;
+                margin-left: 5vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .btn{
+                    background-color: #f8f9fa;
+                    border: solid #f8f9fa;
+                    color: #6c757d;
+                    height: 5vh;
+                    width: 11vw;
+                    margin: 0px 1vw;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    border-radius: 25px;
+                }
+
+                .btn:hover{
+                    background-color: #6c757d;
+                    border: solid #6c757d;
+                    color: #f8f9fa;
+                    border-radius: 25px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+
+                .CTA{
+                    background-color: #ef233c;
+                    border: solid #ef233c;
+                    color: #f8f9fa;
+                    height: 5vh;
+                    width: 11vw;
+                    margin: 0px 1vw;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    border-radius: 25px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                }
+
+                .CTA:hover{
+                    background-color: #0077b6;
+                    border: solid #0077b6;
+                    color: #f8f9fa;
+                    border-radius: 25px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+            }
+        }
+    }
+    
+    footer{
+        background-color: #adb5bd;
+        color: #f8f9fa;
+        height: 250px;
+        text-align: center;
+        display: grid;
+        align-items: center;    
+    }
+}
+}
+
+@media screen and (min-width: 1024px){
+
+body{
+    background-color: #e9ecef;
+    font-family: "Nunito", sans-serif;
+    width: 100vw;
+    height: 100vh;
+
+    header{
+        background-color: #adb5bd;
+        width: auto;
+        height: 400px;
         margin-left: 10vw;
         margin-right: 10vw;
         display: grid;
@@ -36,7 +222,7 @@ body{
 
         .btn-group{
             height: 50px;
-            width: 15vw;
+            width: 18vw;
             text-align: center;
             grid-row: row2;
             grid-column: column3;
@@ -47,7 +233,7 @@ body{
                 border: solid #adb5bd;
                 color: #f8f9fa;
                 height: 50px;
-                width: 7vw;
+                width: 9vw;
                 margin: 0px 5px;
                 font-size: 14px;
                 font-weight: bold;
@@ -58,6 +244,7 @@ body{
                 background-color: #6c757d;
                 border: solid #6c757d;
                 outline: 0;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             }
 
             .login{
@@ -65,16 +252,18 @@ body{
                 border: solid #495057;
                 color: #f8f9fa;
                 height: 50px;
-                width: 7vw;
+                width: 9vw;
                 margin: 0px 5px;
                 font-size: 14px;
                 font-weight: bold;
                 border-radius: 25px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             }
 
             .login:hover{
                 background-color: #0077b6;
                 border: solid #0077b6;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             }
         }
 
@@ -121,9 +310,9 @@ body{
 
             .btn-group{
                 height: 50px;
-                width: 35vw;
+                width: 45vw;
                 text-align: center;
-                margin-left: 30vw;
+                margin-left: 20vw;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -133,7 +322,7 @@ body{
                     border: solid #f8f9fa;
                     color: #6c757d;
                     height: 50px;
-                    width: 7vw;
+                    width: 9vw;
                     margin: 0px 5px;
                     font-size: 14px;
                     font-weight: bold;
@@ -145,6 +334,7 @@ body{
                     border: solid #6c757d;
                     color: #f8f9fa;
                     border-radius: 25px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 }
 
                 .CTA{
@@ -152,11 +342,12 @@ body{
                     border: solid #ef233c;
                     color: #f8f9fa;
                     height: 50px;
-                    width: 7vw;
+                    width: 9vw;
                     margin: 0px 5px;
                     font-size: 14px;
                     font-weight: bold;
                     border-radius: 25px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                 }
 
                 .CTA:hover{
@@ -164,6 +355,7 @@ body{
                     border: solid #0077b6;
                     color: #f8f9fa;
                     border-radius: 25px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 }
             }
         }
@@ -177,4 +369,5 @@ body{
         display: grid;
         align-items: center;    
     }
+}
 }
